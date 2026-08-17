@@ -27,6 +27,6 @@ These labs were built to back up the skills on my CV with practical, documented 
 
 ##  Purpose
 
-Built to strengthen job applications for Linux support, sysadmin, and junior security roles. Each lab includes real troubleshooting scenarios, documented findings, and interview-ready talking points drawn from actual hands-on work.
+Built to strengthen job applications for Linux support, sysadmin, and junior security roles. Each lab includes real troubleshooting scenarios, documented findings.
 
 
