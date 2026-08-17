@@ -168,19 +168,6 @@ fi
 
 ---
 
-## Interview Talking Points
-
-| Scenario | What I'd say |
-|---|---|
-| "Tell me about a permissions issue you solved" | Module 1 — silent group membership stripping via `usermod -G` without `-a` |
-| "Tell me about a service outage you diagnosed" | Module 2 — config syntax error caught by `ExecStartPre` failure pattern and `nginx -t` |
-| "Have you worked with systemd?" | Module 3 — wrote a custom unit file with auto-restart, tested crash recovery via restart counter |
-| "Tell me about a networking/firewall issue" | Module 4 — timeout vs refused distinction, UFW misconfiguration |
-| "Have you troubleshot performance issues?" | Module 5 — disk space incident, indirect failures from a full filesystem |
-| "Can you write bash scripts?" | Module 6 — disk monitoring script with threshold logic, scheduled via cron |
-
----
-
 ## Skills Demonstrated
 
 `Linux` `Ubuntu Server` `systemd` `Nginx` `UFW` `Bash scripting` `Cron` `Package management (apt)` `User/group management` `File permissions` `Log analysis` `journalctl` `SSH` `VirtualBox`
