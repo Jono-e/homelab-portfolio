@@ -302,19 +302,6 @@ kubectl rollout undo                  # Rollback if needed
 
 ---
 
-## Interview Talking Points
-
-| Question | Answer |
-|---|---|
-| "What's the difference between a container and a VM?" | Containers share the host kernel and are isolated at the process level — much lighter than VMs which emulate full hardware. A Docker container starts in milliseconds; a VM takes minutes. |
-| "Explain Docker layer caching" | Each Dockerfile instruction creates a layer. If a layer's inputs haven't changed, Docker reuses the cached version. Putting `COPY requirements.txt` and `RUN pip install` before `COPY app.py` means dependency installation is skipped on rebuilds when only code changes. |
-| "What's the difference between NodePort and ClusterIP?" | ClusterIP is internal only — other pods can reach it but nothing outside the cluster can. NodePort exposes the service on a port on every node, reachable externally. In production you'd typically use Ingress instead of NodePort. |
-| "How does Kubernetes handle a failing pod?" | The ReplicaSet controller continuously reconciles actual state against desired state. When a pod dies, it creates a replacement immediately — before the old one even finishes terminating. |
-| "What's a rolling update?" | Kubernetes replaces pods one at a time, waiting for each new pod to be ready before terminating the old one. This gives zero-downtime deployments — the app stays available throughout. |
-| "Have you done a rollback?" | Yes — `kubectl rollout undo` reverts to the previous ReplicaSet. Kubernetes keeps rollout history specifically for this. I practised doing this in the lab and confirmed the image tag switched back to v1. |
-
----
-
 ## Skills Demonstrated
 
 `Docker` `Dockerfile` `Docker Compose` `Container networking` `Docker volumes` `Kubernetes` `k3s` `kubectl` `Deployments` `Services` `NodePort` `ClusterIP` `Pod scheduling` `Horizontal scaling` `Self-healing` `Rolling updates` `Rollbacks` `containerd` `YAML manifests` `Python Flask` `Redis`
